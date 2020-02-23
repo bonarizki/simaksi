@@ -8,7 +8,9 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\Auth;
+use Validator;
 use Auth;
+use App\simaksi;
 class generalController extends Controller
 {
     // public function __construct()
@@ -20,6 +22,11 @@ class generalController extends Controller
     {
         // dd(Auth::user()->name);
         return view('contentUser/index');
+    }
+
+    public function search($request)
+    {
+        return simaksi::detailSimaksi($request);
     }
 
     public function simaksi()

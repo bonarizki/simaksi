@@ -25,4 +25,6 @@ Route::get('/pembayaranSimaksi','simaksiController@bayarSimaksi')->name('BayarSi
 Route::post('/bayaranSimaksi','simaksiController@prosesBayarSimaksi')->name('ProsesBayarSimaksi');
 Route::get('/HistorySimaksi','simaksiController@HistorySimaksi')->name('History');
 Route::get('/DetailSimaksi/{id}','simaksiController@detailSimaksi')->name('detail');
+Route::get('/search/{id}','generalController@search')->name('search');
+// Route::get('/admin','adminController@index')->name('admin');
 // Route::get('/home', 'HomeController@index')->name('home');

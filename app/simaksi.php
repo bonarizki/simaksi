@@ -50,4 +50,5 @@ class simaksi extends Model
                     ->orderBy('daftar_peserta.nama_peserta','asc')
                     ->get();
     }
+
 }
